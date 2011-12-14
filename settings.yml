@@ -1,0 +1,48 @@
+##
+# @world: this is the worlds name.
+# @faction,job,sub-job,skill: pre-made professions(You can remove this and make
+#   new professions, or, add new professions).
+# @limit: count limit of groups in a specified profession(It means you can not
+#   join groups if you'll exceed the limit of the professions).
+# @time: the time limit before you leave group(This means you can not leave
+#   group before the time limit is done).
+# @join-cost: cost of joining a profession.
+# @leave-cost: cost of leaving a profession.
+##
+
+world:
+  professions:
+    faction:
+      limit: 1
+      time: 192
+      join-cost: 200
+      leave-cost: 600
+    job:
+      limit: 1
+      time: 48
+      join-cost: 100
+      leave-cost: 300
+    subjob:
+      limit: 1
+      time: 12
+      join-cost: 50
+      leave-cost: 150
+    skill:
+      limit: 1
+      time: 3
+      join-cost: 25
+      leave-cost: 75
+settings:
+##
+# @defaults:
+#   this values will be created when you add professions via in-game
+##
+  default-limit: 999
+  default-time: 0
+  default-joincost: 0
+  default-leavecost: 0
+##
+# @enable-iConomy:
+#   enables or disables iConomy support
+##
+  enable-iConomy: true

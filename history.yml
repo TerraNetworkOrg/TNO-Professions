@@ -1,0 +1,12 @@
+##
+# !!!DO NOT TOUCH THIS!!!
+# but for the curiosity of some people:
+#   This is to check when player last joined a profession. Last-join is the time
+#   when a user joined a certain group. The purpose of this is, so i can check
+#   if a user able to leave the group when user types /p leave
+##
+
+world:
+  <userName>:
+    <group>:
+      last-join: 0

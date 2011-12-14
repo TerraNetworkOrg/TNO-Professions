@@ -1,0 +1,37 @@
+name: Professions
+main: me.aRt3m1s.professions.Professions
+version: 0.2.2
+author: TerraNetworkOrg(orig.ArtemisTheSecond)
+depend: [Vault]
+description: Simplified Advance Group Selection Plugin
+commands:
+  professions:
+    description: general profession commands
+    aliases: [p,prof,prs]
+    usage: |
+      §bCommand: §a/professions <parameters> [args...]
+      §bShortcuts: §fuse §a/p, /prof, /pfs
+      §bExample: §a/p join faction GlobalRisk §f- joins a faction GlobalRisk.
+      §bExample: §a/p leave faction BlackList §f- leaves a faction BlackList.
+      §bExample: §a/p list §f- list all professions.
+      §bExample: §a/p list faction §f- list all groups in a profession.
+      §bExample: §a/p me §f- list your groups with its profession.
+      §bExample: §a/p user ArtyFowl §f- list user's groups with its profession.
+      §4 /p help or /p ? - displays this.§f
+  settings:
+    description: configures settings.yml
+    permissions: professions.settings
+    aliases: [s,sett]
+    usage: |
+      §bCommand: §a/settings <parameters> [args...]
+      §bShortcuts: §fuse §a/s, or /sett
+      §bExample: §a/s addProfession faction §f- adds profession faction with default values.
+      §bExample: §a/s limit faction 1 §f- sets limit to faction.
+      §bExample: §a/s time faction 0 §f- sets time limit to faction.
+      §bExample: §a/s joincost faction 60 §f- sets join cost to faction.
+      §bExample: §a/s leavecost faction 120 §f- sets leave cost to faction.
+      §bExample: §a/s reload §f- reload professions.
+      §4 /s help or /s ? - displays this.§f
+permissions:
+  professions.settings:
+    description: allows usage of the settings commands
